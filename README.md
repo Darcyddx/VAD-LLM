@@ -94,7 +94,7 @@ is evaluated across six benchmark datasets: UCSD Ped2 (Ped2), CUHK Avenue (CUHK)
 ### Sampling Strategies Illustration
 <img src="./images/samplings.png" alt="Sampling Strategies" width="70%">
 
-The figure present various sampling strategies.
+The figure present the most popular sampling strategies for video tasks.
 
 ### Sampling Strategies Table
 Comparison of different sampling strategies for temporal reasoning.
