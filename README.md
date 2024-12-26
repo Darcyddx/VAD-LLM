@@ -41,7 +41,7 @@
       <img src="./images/c.png" alt="Training-free"><br>(c) Training-free
     </td>
     <td style="text-align: center;">
-      <img src="./images/d.png" alt="Open-world"  width="430"><br>(d) Open-world
+      <img src="./images/d.png" alt="Open-world"  width="440"><br>(d) Open-world
     </td>
   </tr>
 </table>
