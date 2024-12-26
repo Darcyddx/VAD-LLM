@@ -3,7 +3,7 @@
 ### 🔥🔥🔥[Quo Vadis, Anomaly Detection? LLMs and VLMs in the Spotlight](https://arxiv.org/abs/2412.18298)💡
 
 ---
-👋👋👋 A collection of papers and resources related to Large Language Models in video anomaly detection🚨. 
+>👋👋👋 A collection of papers and resources related to Large Language Models in video >anomaly detection🚨. 
 >
 > More details please refer to our [paper](https://arxiv.org/abs/2412.18298). 
 >
