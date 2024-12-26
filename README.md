@@ -75,7 +75,10 @@ is evaluated across six benchmark datasets: UCSD Ped2 (Ped2), CUHK Avenue (CUHK)
 ### Sampling Strategies Illustration
 <img src="./images/samplings.png" alt="Sampling Strategies" width="70%">
 
+The figure present various sampling strategies.
+
 ### Sampling Strategies Table
+Comparison of different sampling strategies for temporal reasoning.
 
 | Sampling         | Interval   | Frame Count  | Redundancy | Target Use Case          | Cost     |
 |-------------------|------------|--------------|------------|--------------------------|----------|
@@ -85,6 +88,9 @@ is evaluated across six benchmark datasets: UCSD Ped2 (Ped2), CUHK Avenue (CUHK)
 | Dense             | One        | High         | High       | Fine-grained modeling    | Low      |
 | Sliding window    | Adaptive   | Medium       | Medium     | Local temporal details   | Medium   |
 | Adaptive          | Dynamic    | High         | Low        | Comprehensive modeling   | Medium   |
+
+## ❤️‍🔥❤️‍🔥❤️‍🔥 Contribution
+We warmly invite everyone to contribute to this repository and help enhance its quality and scope. Feel free to submit pull requests to add new papers, projects, or other useful resources, as well as to correct any errors you discover. To ensure consistency, please format your pull requests using our tables' structures. We greatly appreciate your valuable contributions and support!
 
 
 
