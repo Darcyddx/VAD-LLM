@@ -22,6 +22,10 @@
 }
 ```
 ---
+## 🚀 News
+- \[26/12/2024\] Release GitHub for our paper🎁.
+- \[25/12/2024\] Release our paper in arXiv🎄.
+---
 <div style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 20px;">
   <figure style="text-align: center; width: 45%;">
     <img src="./images/a.png" alt="Temporal modeling" style="width: 100%; height: auto;">
