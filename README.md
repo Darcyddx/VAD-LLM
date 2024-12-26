@@ -25,8 +25,8 @@
 ## 🚀 News
 - \[26/12/2024\] Release GitHub for our paper🎁.
 - \[25/12/2024\] Release our paper in arXiv🎄.
----
 
+## 
 | ![Temporal modeling](./images/a.png) (a) Temporal modeling | ![Interpretability](./images/b.png) (b) Interpretability |
 |-------------------------------------------------------------|-----------------------------------------------------------|
 | ![Training-free](./images/c.png) **(c) Training-free**        | <img src="./images/d.png" alt="Open-world" width="413"> **(d) Open-world**             |
