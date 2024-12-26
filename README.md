@@ -26,27 +26,13 @@
 - \[26/12/2024\] Release GitHub for our paper🎁.
 - \[25/12/2024\] Release our paper in arXiv🎄.
 ---
-<div style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 20px;">
-  <figure style="text-align: center; width: 45%;">
-    <img src="./images/a.png" alt="Temporal modeling" style="width: 100%; height: auto;">
-    <figcaption>(a) Temporal modeling</figcaption>
-  </figure>
-  <figure style="text-align: center; width: 45%;">
-    <img src="./images/b.png" alt="Interpretability" style="width: 100%; height: auto;">
-    <figcaption>(b) Interpretability</figcaption>
-  </figure>
-</div>
-<div style="display: flex; justify-content: space-around; align-items: center;">
-  <figure style="text-align: center; width: 45%;">
-    <img src="./images/c.png" alt="Training-free" style="width: 100%; height: auto;">
-    <figcaption>(c) Training-free</figcaption>
-  </figure>
-  <figure style="text-align: center; width: 45%;">
-    <img src="./images/d.png" alt="Open-world" style="width: 100%; height: auto;">
-    <figcaption>(d) Open-world</figcaption>
-  </figure>
-</div>
+
+| ![Temporal modeling](./images/a.png) (a) Temporal modeling | ![Interpretability](./images/b.png) (b) Interpretability |
+|-------------------------------------------------------------|-----------------------------------------------------------|
+| ![Training-free](./images/c.png) **(c) Training-free**        | ![Open-world](./images/d.png) **(d) Open-world**             |
+
 We present a systematic evaluation of 13 closely related works from 2024 that use large language models (LLMs) and vision-language models (VLMs) for video anomaly detection (VAD). The analysis is organized around four key perspectives: (a) temporal modeling, (b) interpretability, (c) training-free, and (d) open-world detection, each represented by a subfigure. For each perspective, we highlight the strategies used, key strengths, limitations, and outline promising directions for future research. The video frames used in the analysis are sourced from the [MSAD](https://msad-dataset.github.io/) dataset.
+
 
 ## Comparison of recent methods in video anomaly detection (VAD)
 We compare recent approaches in VAD, highlighting key aspects such as interpretability, temporal modeling, few-shot learning, and open-world detection. Performance
@@ -64,81 +50,24 @@ is evaluated across six benchmark datasets: UCSD Ped2 (Ped2) [45], CUHK Avenue (
 | [Holmes-VAU](https://arxiv.org/abs/2412.06171)   | Fine-tuning       |          | ✅        |          | ✅          | --     | --     | --     | 89.0   | 87.7   | --     |
 | [VERA](https://arxiv.org/abs/2412.01095)         | Training-free     | ✅        |          |          |            | --     | --     | --     | 86.6   | 88.2   | --     |
 
----
 
-<div style="display: flex; align-items: center;">
 
-  <div style="flex: 1;">
-    <h2>Comparison of different sampling strategies for temporal reasoning</h2>
-    <table style="width: 100%; border-collapse: collapse; text-align: left;">
-      <thead>
-        <tr>
-          <th>Sampling</th>
-          <th>Interval</th>
-          <th>Frame count</th>
-          <th>Redundancy</th>
-          <th>Target use case</th>
-          <th>Cost</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Uniform</td>
-          <td>Fixed</td>
-          <td>Medium</td>
-          <td>Medium</td>
-          <td>Global trend</td>
-          <td>High</td>
-        </tr>
-        <tr>
-          <td>Random</td>
-          <td>Random</td>
-          <td>Medium</td>
-          <td>Low</td>
-          <td>Data augmentation</td>
-          <td>High</td>
-        </tr>
-        <tr>
-          <td>Key frame</td>
-          <td>Adaptive</td>
-          <td>Low to Med.</td>
-          <td>Low</td>
-          <td>Key event extraction</td>
-          <td>Medium</td>
-        </tr>
-        <tr>
-          <td>Dense</td>
-          <td>One</td>
-          <td>High</td>
-          <td>High</td>
-          <td>Fine-grained modeling</td>
-          <td>Low</td>
-        </tr>
-        <tr>
-          <td>Sliding window</td>
-          <td>Adaptive</td>
-          <td>Medium</td>
-          <td>Medium</td>
-          <td>Local temporal details</td>
-          <td>Medium</td>
-        </tr>
-        <tr>
-          <td>Adaptive</td>
-          <td>Dynamic</td>
-          <td>High</td>
-          <td>Low</td>
-          <td>Comprehensive modeling</td>
-          <td>Medium</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+## Comparison of Different Sampling Strategies for Temporal Reasoning
 
-  <div style="flex: 1; text-align: center; padding-left: 20px;">
-    <img src="./images/samplings.png" alt="Sampling Strategies" style="max-width: 100%; height: auto;">
-    <p>Figure: Various sampling strategies</p>
-  </div>
+### Sampling Strategies Illustration
+<img src="./images/samplings.png" alt="Sampling Strategies" width="70%">
 
-</div>
+### Sampling Strategies Table
+
+| Sampling         | Interval   | Frame Count  | Redundancy | Target Use Case          | Cost     |
+|-------------------|------------|--------------|------------|--------------------------|----------|
+| Uniform           | Fixed      | Medium       | Medium     | Global trend             | High     |
+| Random            | Random     | Medium       | Low        | Data augmentation        | High     |
+| Key frame         | Adaptive   | Low to Med.  | Low        | Key event extraction     | Medium   |
+| Dense             | One        | High         | High       | Fine-grained modeling    | Low      |
+| Sliding window    | Adaptive   | Medium       | Medium     | Local temporal details   | Medium   |
+| Adaptive          | Dynamic    | High         | Low        | Comprehensive modeling   | Medium   |
+
+
 
 
