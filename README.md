@@ -8,9 +8,12 @@
 > More details please refer to our [paper](https://arxiv.org/abs/2412.18298). 
 >
 > Please let us know if you find out a mistake or have any suggestions by e-mail: Xi.Ding1@anu.edu.au
->
-> If you find our work useful for your research, please cite the following:
-```
+
+### 📑 Citation
+
+If you find our survey useful for your research, please cite the following paper:
+
+```bibtex
 @misc{ding2024quovadisanomalydetection,
       title={Quo Vadis, Anomaly Detection? LLMs and VLMs in the Spotlight}, 
       author={Xi Ding and Lei Wang},
@@ -21,10 +24,11 @@
       url={https://arxiv.org/abs/2412.18298}, 
 }
 ```
+
 ---
 ## 🚀 News
-- \[26/12/2024\] Release GitHub for our paper🎁.
-- \[25/12/2024\] Release our paper in arXiv🎄.
+- \[26/12/2024\] 🎁The GitHub repository for our paper has been released.
+- \[25/12/2024\] 🎄Our paper has been published on arXiv.
 
 ## 
 <table>
@@ -45,9 +49,6 @@
     </td>
   </tr>
 </table>
-
-
-
 We present a systematic evaluation of 13 closely related works from 2024 that use large language models (LLMs) and vision-language models (VLMs) for video anomaly detection (VAD). The analysis is organized around four key perspectives: (a) temporal modeling, (b) interpretability, (c) training-free, and (d) open-world detection, each represented by a subfigure. For each perspective, we highlight the strategies used, key strengths, limitations, and outline promising directions for future research. The video frames used in the analysis are sourced from the [MSAD](https://msad-dataset.github.io/) dataset.
 
 
@@ -55,7 +56,7 @@ We present a systematic evaluation of 13 closely related works from 2024 that us
 We compare recent approaches in VAD, highlighting key aspects such as interpretability, temporal modeling, few-shot learning, and open-world detection. Performance
 is evaluated across six benchmark datasets: UCSD Ped2 (Ped2), CUHK Avenue (CUHK), ShanghaiTech (ShT), UCF-Crime (UCF), XD-Violence (XD), and UBnormal (UB). Datasets evaluated using Area Under the Curve (AUC) include Ped2, CUHK, ShT, UCF, and UB, while the XD dataset is evaluated using Average Precision (AP).
 | Method            | LLM/VLM           | Interpret. | Temporal |    Few-shot   |    Open-world     | [Ped2](http://www.svcl.ucsd.edu/projects/anomaly/dataset.htm)   | [CUHK](https://www.cse.cuhk.edu.hk/leojia/projects/detectabnormal/dataset.html)   | [ShT](https://github.com/desenzhou/ShanghaiTechDataset)    | [UCF](https://www.crcv.ucf.edu/research/real-world-anomaly-detection-in-surveillance-videos/)    | [XD](https://roc-ng.github.io/XD-Violence/)     | [UB](https://github.com/lilygeorgescu/UBnormal/)     |
-|--------------------|-------------------|------------|----------|----------|------------|--------|--------|--------|--------|--------|--------|
+|--------------------|-------------------|------------|----------|---------------|-----------------|--------|--------|--------|--------|--------|--------|
 | [VLAVAD](https://arxiv.org/abs/2409.14109)       | Fine-tuning       | ✅        | ✅        |          |            | 99.0   | 87.6   | 87.2   | --     | --     | --     |
 | [VADor](https://arxiv.org/abs/2401.05702)        | Fine-tuning       | ✅        | ✅        |          |            | --     | --     | --     | 88.1   | --     | --     |
 | [OVVAD](https://arxiv.org/abs/2311.07042)        | Fine-tuning       |          | ✅        |          | ✅          | --     | --     | --     | 86.4   | 66.5   | 62.9   |
