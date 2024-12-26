@@ -9,7 +9,7 @@
 >
 > Please let us know if you find out a mistake or have any suggestions by e-mail: Xi.Ding1@anu.edu.au
 >
-> If you find our work useful for your research, please cite the following🙏🙏🙏:
+> If you find our work useful for your research, please cite the following:
 ```
 @misc{ding2024quovadisanomalydetection,
       title={Quo Vadis, Anomaly Detection? LLMs and VLMs in the Spotlight}, 
