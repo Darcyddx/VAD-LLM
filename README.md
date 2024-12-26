@@ -27,10 +27,24 @@
 - \[25/12/2024\] Release our paper in arXiv🎄.
 
 ## 
-| <center>![Temporal modeling](./images/a.png)<br>(a) Temporal modeling</center> | <center>![Interpretability](./images/b.png)<br>(b) Interpretability</center> |
-|-------------------------------------------------------------|-----------------------------------------------------------|
-| <center>![Training-free](./images/c.png)<br>(c) Training-free</center> | <center><img src="./images/d.png" alt="Open-world" width="450"><br>(d) Open-world</center> |
-
+<table>
+  <tr>
+    <td style="text-align: center;">
+      <img src="./images/a.png" alt="Temporal modeling"><br>(a) Temporal modeling
+    </td>
+    <td style="text-align: center;">
+      <img src="./images/b.png" alt="Interpretability"><br>(b) Interpretability
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">
+      <img src="./images/c.png" alt="Training-free"><br>(c) Training-free
+    </td>
+    <td style="text-align: center;">
+      <img src="./images/d.png" alt="Open-world" width="450"><br>(d) Open-world
+    </td>
+  </tr>
+</table>
 
 We present a systematic evaluation of 13 closely related works from 2024 that use large language models (LLMs) and vision-language models (VLMs) for video anomaly detection (VAD). The analysis is organized around four key perspectives: (a) temporal modeling, (b) interpretability, (c) training-free, and (d) open-world detection, each represented by a subfigure. For each perspective, we highlight the strategies used, key strengths, limitations, and outline promising directions for future research. The video frames used in the analysis are sourced from the [MSAD](https://msad-dataset.github.io/) dataset.
 
