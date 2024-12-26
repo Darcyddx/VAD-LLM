@@ -3,6 +3,25 @@
 ### 🔥🔥🔥[Quo Vadis, Anomaly Detection? LLMs and VLMs in the Spotlight](https://arxiv.org/abs/2412.18298)💡
 
 ---
+👋👋👋 A collection of papers and resources related to Large Language Models in video anomaly detection🎞️. 
+>
+> More details please refer to our [paper](https://arxiv.org/abs/2412.18298). 
+>
+> Please let us know if you find out a mistake or have any suggestions by e-mail: Xi.Ding1@anu.edu.au
+>
+> If you find our work useful for your research, please cite the following🙏🙏🙏:
+```
+@misc{ding2024quovadisanomalydetection,
+      title={Quo Vadis, Anomaly Detection? LLMs and VLMs in the Spotlight}, 
+      author={Xi Ding and Lei Wang},
+      year={2024},
+      eprint={2412.18298},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.18298}, 
+}
+```
+---
 ## Comparison of recent methods in video anomaly detection (VAD)
 We compare recent approaches in VAD, highlighting key aspects such as interpretability, temporal modeling, few-shot learning, and open-world detection. Performance
 is evaluated across six benchmark datasets: UCSD Ped2 (Ped2) [45], CUHK Avenue (CUHK) [46], ShanghaiTech (ShT) [47], UCF-Crime (UCF) [12], XD-Violence (XD) [13], and UBnormal (UB) [14]. Datasets evaluated using Area Under the Curve (AUC) include Ped2, CUHK, ShT, UCF, and UB, while the XD dataset is evaluated using Average Precision (AP).
