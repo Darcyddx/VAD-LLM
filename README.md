@@ -29,7 +29,7 @@
 
 | ![Temporal modeling](./images/a.png) (a) Temporal modeling | ![Interpretability](./images/b.png) (b) Interpretability |
 |-------------------------------------------------------------|-----------------------------------------------------------|
-| ![Training-free](./images/c.png) **(c) Training-free**        | ![Open-world](./images/d.png) **(d) Open-world**             |
+| ![Training-free](./images/c.png) **(c) Training-free**        | <img src="./images/d.png" alt="Open-world" width="413"> **(d) Open-world**             |
 
 We present a systematic evaluation of 13 closely related works from 2024 that use large language models (LLMs) and vision-language models (VLMs) for video anomaly detection (VAD). The analysis is organized around four key perspectives: (a) temporal modeling, (b) interpretability, (c) training-free, and (d) open-world detection, each represented by a subfigure. For each perspective, we highlight the strategies used, key strengths, limitations, and outline promising directions for future research. The video frames used in the analysis are sourced from the [MSAD](https://msad-dataset.github.io/) dataset.
 
