@@ -22,6 +22,28 @@
 }
 ```
 ---
+<div style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 20px;">
+  <figure style="text-align: center; width: 45%;">
+    <img src="./images/a.png" alt="Temporal modeling" style="width: 100%; height: auto;">
+    <figcaption>(a) Temporal modeling</figcaption>
+  </figure>
+  <figure style="text-align: center; width: 45%;">
+    <img src="./images/b.png" alt="Interpretability" style="width: 100%; height: auto;">
+    <figcaption>(b) Interpretability</figcaption>
+  </figure>
+</div>
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <figure style="text-align: center; width: 45%;">
+    <img src="./images/c.png" alt="Training-free" style="width: 100%; height: auto;">
+    <figcaption>(c) Training-free</figcaption>
+  </figure>
+  <figure style="text-align: center; width: 45%;">
+    <img src="./images/d.png" alt="Open-world" style="width: 100%; height: auto;">
+    <figcaption>(d) Open-world</figcaption>
+  </figure>
+</div>
+We present a systematic evaluation of 13 closely related works from 2024 that use large language models (LLMs) and vision-language models (VLMs) for video anomaly detection (VAD). The analysis is organized around four key perspectives: (a) temporal modeling, (b) interpretability, (c) training-free, and (d) open-world detection, each represented by a subfigure. For each perspective, we highlight the strategies used, key strengths, limitations, and outline promising directions for future research. The video frames used in the analysis are sourced from the [MSAD](https://msad-dataset.github.io/) dataset.
+
 ## Comparison of recent methods in video anomaly detection (VAD)
 We compare recent approaches in VAD, highlighting key aspects such as interpretability, temporal modeling, few-shot learning, and open-world detection. Performance
 is evaluated across six benchmark datasets: UCSD Ped2 (Ped2) [45], CUHK Avenue (CUHK) [46], ShanghaiTech (ShT) [47], UCF-Crime (UCF) [12], XD-Violence (XD) [13], and UBnormal (UB) [14]. Datasets evaluated using Area Under the Curve (AUC) include Ped2, CUHK, ShT, UCF, and UB, while the XD dataset is evaluated using Average Precision (AP).
@@ -37,5 +59,82 @@ is evaluated across six benchmark datasets: UCSD Ped2 (Ped2) [45], CUHK Avenue (
 | [STPrompt](https://arxiv.org/abs/2408.05905)     | Fine-tuning       |✅         | ✅        |          |            | --     | --     | 97.8   | 88.1   | --     | 64.0   |
 | [Holmes-VAU](https://arxiv.org/abs/2412.06171)   | Fine-tuning       |          | ✅        |          | ✅          | --     | --     | --     | 89.0   | 87.7   | --     |
 | [VERA](https://arxiv.org/abs/2412.01095)         | Training-free     | ✅        |          |          |            | --     | --     | --     | 86.6   | 88.2   | --     |
+
+---
+
+<div style="display: flex; align-items: center;">
+
+  <div style="flex: 1;">
+    <h2>Comparison of different sampling strategies for temporal reasoning</h2>
+    <table style="width: 100%; border-collapse: collapse; text-align: left;">
+      <thead>
+        <tr>
+          <th>Sampling</th>
+          <th>Interval</th>
+          <th>Frame count</th>
+          <th>Redundancy</th>
+          <th>Target use case</th>
+          <th>Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Uniform</td>
+          <td>Fixed</td>
+          <td>Medium</td>
+          <td>Medium</td>
+          <td>Global trend</td>
+          <td>High</td>
+        </tr>
+        <tr>
+          <td>Random</td>
+          <td>Random</td>
+          <td>Medium</td>
+          <td>Low</td>
+          <td>Data augmentation</td>
+          <td>High</td>
+        </tr>
+        <tr>
+          <td>Key frame</td>
+          <td>Adaptive</td>
+          <td>Low to Med.</td>
+          <td>Low</td>
+          <td>Key event extraction</td>
+          <td>Medium</td>
+        </tr>
+        <tr>
+          <td>Dense</td>
+          <td>One</td>
+          <td>High</td>
+          <td>High</td>
+          <td>Fine-grained modeling</td>
+          <td>Low</td>
+        </tr>
+        <tr>
+          <td>Sliding window</td>
+          <td>Adaptive</td>
+          <td>Medium</td>
+          <td>Medium</td>
+          <td>Local temporal details</td>
+          <td>Medium</td>
+        </tr>
+        <tr>
+          <td>Adaptive</td>
+          <td>Dynamic</td>
+          <td>High</td>
+          <td>Low</td>
+          <td>Comprehensive modeling</td>
+          <td>Medium</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="flex: 1; text-align: center; padding-left: 20px;">
+    <img src="./images/samplings.png" alt="Sampling Strategies" style="max-width: 100%; height: auto;">
+    <p>Figure: Various sampling strategies</p>
+  </div>
+
+</div>
 
 
