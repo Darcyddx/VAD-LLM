@@ -14,14 +14,11 @@
 If you find our work useful for your research, please cite the following paper:
 
 ```bibtex
-@misc{ding2024quovadisanomalydetection,
-      title={Quo Vadis, Anomaly Detection? LLMs and VLMs in the Spotlight}, 
-      author={Xi Ding and Lei Wang},
-      year={2024},
-      eprint={2412.18298},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.18298}, 
+@article{ding2024quo,
+  title={Quo Vadis, Anomaly Detection? LLMs and VLMs in the Spotlight},
+  author={Ding, Xi and Wang, Lei},
+  journal={arXiv preprint arXiv:2412.18298},
+  year={2024}
 }
 ```
 
